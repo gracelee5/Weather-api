@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Weather from './weather';
+const App=()=> {
 
-function App() {
+  const currentLocation = "Seoul"; // 예제로 현재 위치를 "Seoul"로 설정
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Weather location={currentLocation}/>
     </div>
   );
 }
